@@ -1,8 +1,8 @@
 module.exports.config = {
-	name: "Arabic",
+	name: "rb",
     version: "1.0.1",
     permission: 0,
-    credits: "Nayan",
+    credits: "Apon",
     prefix: true,
     description: "ask any thing",
     category: "admin",
@@ -22,7 +22,7 @@ module.exports.run = async ({ api, event, args }) => {
 	if (event.type == "message_reply") {
 		translateThis = event.messageReply.body
 		if (content.indexOf("-> ") !== -1) lang = content.substring(content.indexOf("-> ") + 3);
-		else lang = 'arabic';
+		else lang = 'Arabic';
 	}
 	else if (content.indexOf(" -> ") == -1) {
 		translateThis = content.slice(0, content.length)
@@ -36,4 +36,4 @@ module.exports.run = async ({ api, event, args }) => {
 		var fromLang = (retrieve[2] === retrieve[8][0][0]) ? retrieve[2] : retrieve[8][0][0]
 		api.sendMessage(`English: ${text}\n - Translated ${fromLang} on ${lang}`, event.threadID, event.messageID);
 	});
-    }
+}
