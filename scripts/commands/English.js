@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "eng",
     version: "1.0.1",
     permission: 0,
-    credits: "Nayan",
+    credits: "Apon",
     prefix: true,
     description: "ask any thing",
     category: "admin",
@@ -22,7 +22,7 @@ module.exports.run = async ({ api, event, args }) => {
 	if (event.type == "message_reply") {
 		translateThis = event.messageReply.body
 		if (content.indexOf("-> ") !== -1) lang = content.substring(content.indexOf("-> ") + 3);
-		else lang = 'en';
+		else lang = 'English';
 	}
 	else if (content.indexOf(" -> ") == -1) {
 		translateThis = content.slice(0, content.length)
