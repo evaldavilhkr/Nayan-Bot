@@ -22,7 +22,7 @@ module.exports.run = async ({ api, event, args }) => {
 	if (event.type == "message_reply") {
 		translateThis = event.messageReply.body
 		if (content.indexOf("-> ") !== -1) lang = content.substring(content.indexOf("-> ") + 3);
-		else lang = 'farsi';
+		else lang = 'arbic';
 	}
 	else if (content.indexOf(" -> ") == -1) {
 		translateThis = content.slice(0, content.length)
