@@ -7,7 +7,7 @@ module.exports = async ({ api, event }) => {
       bio: `prefix : ${global.config.PREFIX}`,
       note: 'automatically change the bot bio.'
     },
-    notification: {
+    notification: { 
       status: false,
       time: 39, // 39 minutes
       note: 'bot will update you on his informations like all users, all groups, all operators, all admins every 30 minutes'
