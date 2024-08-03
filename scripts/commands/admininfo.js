@@ -1,8 +1,8 @@
 .exports.config = {
-    name: "admin",
+    name: "admin1",
     version: "1.0.0",
     permission: 0,
-    credits: "nayan",
+    credits: "apon",
     prefix: true,
     description: "",
     category: "prefix",
@@ -40,7 +40,7 @@ var callback = () => api.sendMessage({body:`
 𝐆𝐦𝐚𝐢𝐥       : apon04860@gmail.com
 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩: wa.me/+8801717724407
 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦  : t.me/devil.apon
-𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐋𝐢𝐧𝐤 : https://www.facebook.com/www.Its.Baby.Apon`,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
+𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐋𝐢𝐧𝐤 : https://www.facebook.com/Its.Baby.Apon`,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/1.png"));  
       return request(encodeURI(`https://graph.facebook.com/100082215656149/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
 fs.createWriteStream(__dirname+'/cache/1.png')).on('close',() => callback());
