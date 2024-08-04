@@ -20,11 +20,9 @@ handleEvent: function({ api, event, client, __GLOBAL }) {
 		var msg = {
 				body: "আপন বস কে খুজতেছেন নাকি🙃🙃",
 				body: "আপন বসকে ডিসটার্ব করলে ঠ্যাং ভাইঙ্গালাইমু😡😡",
-				body: "আপন বস বিজি আছে কিছু বলবেন",
-				body: "আপন বস পরে কথা বলবে",
 			}
 			api.sendMessage( msg, threadID, messageID);
-    api.setMessageReaction("🙃", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🙃","⚠️","🥴", event.messageID, (err) => {}, true)
 		}
 	},
 	start: function({ nayan }) {
