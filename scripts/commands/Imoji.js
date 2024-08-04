@@ -19,7 +19,7 @@ handleEvent: function({ api, event, client, __GLOBAL }) {
 	if (body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf("🤖")==0) {
 		var msg = {
 				body: "আপন বস কে খুজতেছেন নাকি🙃🙃",
-				attachment: fs.createReadStream(__dirname + `/Nayan/Mayabi.mp3`)
+				body: "বসকে ডিসটার্ব করলে ঠ্যাং ভাইঙ্গালাইমু😡😡",
 			}
 			api.sendMessage( msg, threadID, messageID);
     api.setMessageReaction("🙃", event.messageID, (err) => {}, true)
