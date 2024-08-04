@@ -22,7 +22,7 @@ handleEvent: function({ api, event, client, __GLOBAL }) {
 				body: "আপন বসকে ডিসটার্ব করলে ঠ্যাং ভাইঙ্গালাইমু😡😡",
 			}
 			api.sendMessage( msg, threadID, messageID);
-    api.setMessageReaction("🙃","⚠️","🥴", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🙃", event.messageID, (err) => {}, true)
 		}
 	},
 	start: function({ nayan }) {
