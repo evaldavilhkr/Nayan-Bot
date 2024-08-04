@@ -18,7 +18,7 @@ handleEvent: function({ api, event, client, __GLOBAL }) {
   const body = content.toLowerCase();
 	if (body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf("🤖")==0) {
 		var msg = {
-				body: "আপন বস কে খুজতেছেন নাকি🙃🙃", " আপন বস বিজি আছে ডিসটার্ব করবেন না😒😒",
+				body: "আপন বস কে খুজতেছেন নাকি🙃🙃",
 				attachment: fs.createReadStream(__dirname + `/Nayan/Mayabi.mp3`)
 			}
 			api.sendMessage( msg, threadID, messageID);
