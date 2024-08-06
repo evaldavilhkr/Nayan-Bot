@@ -18,8 +18,8 @@ handleEvent: function({ api, event, client, __GLOBAL }) {
   const body = content.toLowerCase();
 	if (body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf("🤖")==0) {
 		var msg = {
-				body: "আপন বস কে খুজতেছেন নাকি🙃🙃",
-				body: "আপন বসকে ডিসটার্ব করলে ঠ্যাং ভাইঙ্গালাইমু😡😡",
+				body: "চুনা তুমারে কি সয়তানে লারা দিচ্ছে🙃🙃",
+				body: "চুনা তুমারে কি সয়তানে লারা দিচ্ছে🙃🙃,
 			}
 			api.sendMessage( msg, threadID, messageID);
     api.setMessageReaction("🙃", event.messageID, (err) => {}, true)
